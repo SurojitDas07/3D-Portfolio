@@ -1,14 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
+  base:"https://SurojitDas07.github.io/",
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      // Ensure that non-JavaScript assets are treated as modules and included in the bundle
-      output: {
-        manualChunks: undefined,
-      },
-    },
-  },
-});
+})
